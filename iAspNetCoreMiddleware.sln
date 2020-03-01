@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28711.60
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E25C1577-1F65-48E9-8CA3-58F1EB2B6DED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{C31801D7-0802-498C-9200-B55C195A14C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetcore.Middleware.Logging.RollingFile", "src\3.x\Middleware\iAspNetcore.Middleware.Logging.RollingFile\iAspNetcore.Middleware.Logging.RollingFile.csproj", "{8E398EBF-DF8C-4760-9CDC-BBC9AD194E17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetcore.Middleware.Pagination", "src\3.x\Middleware\iAspNetcore.Middleware.Pagination\iAspNetcore.Middleware.Pagination.csproj", "{8EBBE238-F372-47F1-A368-38703F86E5E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetcore.Middleware.LogResponse", "src\3.x\Middleware\iAspNetcore.Middleware.LogResponse\iAspNetcore.Middleware.LogResponse.csproj", "{9A97564B-3412-4D49-8AC4-159D268E3562}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{127D4C61-BD74-4FA8-B52B-4C9D11C21806}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetCore.Modules.EmailSender", "src\3.x\Modules\iAspNetCore.Modules.EmailSender\iAspNetCore.Modules.EmailSender.csproj", "{45973196-E0DF-43FB-817F-C5335D836EFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{BFF1F6A1-7F6F-41B0-A024-C3A994793E01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{729F4556-2A5A-47A0-AAF5-2C40340B846B}"
+	ProjectSection(SolutionItems) = preProject
+		History.txt = History.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSamples", "src\3.x\Samples\TestSamples\TestSamples.csproj", "{C8777D57-F2CD-4C2A-A1E0-B219E68CF6D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetCore.Middleware.Logging.ColoredConsole", "src\3.x\Middleware\iAspNetCore.Middleware.Logging.ColoredConsole\iAspNetCore.Middleware.Logging.ColoredConsole.csproj", "{22710F8E-A38A-49F7-886B-E9103883565A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetCore.Middleware.Logging.ColorConsole", "src\3.x\Middleware\iAspNetCore.Middleware.Logging.ColorConsole\iAspNetCore.Middleware.Logging.ColorConsole.csproj", "{21C139B7-744F-46EE-A10D-BC5BAD1F6C28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetcore.Middleware.LogRequest", "src\Middleware\3.x\iAspNetcore.Middleware.LogRequest\iAspNetcore.Middleware.LogRequest.csproj", "{EFFC7022-2165-4CC7-A360-3B7E81A5804B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iAspNetcore.Middleware.ErrorLoggingMiddleware", "src\3.x\Middleware\iAspNetcore.Middleware.ErrorLoggingMiddleware\iAspNetcore.Middleware.ErrorLoggingMiddleware.csproj", "{2A695FF4-607F-4A56-BCB4-160CBBBF233B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E398EBF-DF8C-4760-9CDC-BBC9AD194E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E398EBF-DF8C-4760-9CDC-BBC9AD194E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E398EBF-DF8C-4760-9CDC-BBC9AD194E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E398EBF-DF8C-4760-9CDC-BBC9AD194E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBBE238-F372-47F1-A368-38703F86E5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBBE238-F372-47F1-A368-38703F86E5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBBE238-F372-47F1-A368-38703F86E5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBBE238-F372-47F1-A368-38703F86E5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A97564B-3412-4D49-8AC4-159D268E3562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A97564B-3412-4D49-8AC4-159D268E3562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A97564B-3412-4D49-8AC4-159D268E3562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A97564B-3412-4D49-8AC4-159D268E3562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45973196-E0DF-43FB-817F-C5335D836EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45973196-E0DF-43FB-817F-C5335D836EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45973196-E0DF-43FB-817F-C5335D836EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45973196-E0DF-43FB-817F-C5335D836EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8777D57-F2CD-4C2A-A1E0-B219E68CF6D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8777D57-F2CD-4C2A-A1E0-B219E68CF6D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8777D57-F2CD-4C2A-A1E0-B219E68CF6D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8777D57-F2CD-4C2A-A1E0-B219E68CF6D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22710F8E-A38A-49F7-886B-E9103883565A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22710F8E-A38A-49F7-886B-E9103883565A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22710F8E-A38A-49F7-886B-E9103883565A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22710F8E-A38A-49F7-886B-E9103883565A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C139B7-744F-46EE-A10D-BC5BAD1F6C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C139B7-744F-46EE-A10D-BC5BAD1F6C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C139B7-744F-46EE-A10D-BC5BAD1F6C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C139B7-744F-46EE-A10D-BC5BAD1F6C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFFC7022-2165-4CC7-A360-3B7E81A5804B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFC7022-2165-4CC7-A360-3B7E81A5804B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFC7022-2165-4CC7-A360-3B7E81A5804B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFC7022-2165-4CC7-A360-3B7E81A5804B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A695FF4-607F-4A56-BCB4-160CBBBF233B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A695FF4-607F-4A56-BCB4-160CBBBF233B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A695FF4-607F-4A56-BCB4-160CBBBF233B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A695FF4-607F-4A56-BCB4-160CBBBF233B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C31801D7-0802-498C-9200-B55C195A14C6} = {E25C1577-1F65-48E9-8CA3-58F1EB2B6DED}
+		{8E398EBF-DF8C-4760-9CDC-BBC9AD194E17} = {C31801D7-0802-498C-9200-B55C195A14C6}
+		{8EBBE238-F372-47F1-A368-38703F86E5E0} = {C31801D7-0802-498C-9200-B55C195A14C6}
+		{9A97564B-3412-4D49-8AC4-159D268E3562} = {C31801D7-0802-498C-9200-B55C195A14C6}
+		{127D4C61-BD74-4FA8-B52B-4C9D11C21806} = {E25C1577-1F65-48E9-8CA3-58F1EB2B6DED}
+		{45973196-E0DF-43FB-817F-C5335D836EFF} = {127D4C61-BD74-4FA8-B52B-4C9D11C21806}
+		{BFF1F6A1-7F6F-41B0-A024-C3A994793E01} = {E25C1577-1F65-48E9-8CA3-58F1EB2B6DED}
+		{C8777D57-F2CD-4C2A-A1E0-B219E68CF6D1} = {BFF1F6A1-7F6F-41B0-A024-C3A994793E01}
+		{22710F8E-A38A-49F7-886B-E9103883565A} = {C31801D7-0802-498C-9200-B55C195A14C6}
+		{21C139B7-744F-46EE-A10D-BC5BAD1F6C28} = {C31801D7-0802-498C-9200-B55C195A14C6}
+		{EFFC7022-2165-4CC7-A360-3B7E81A5804B} = {C31801D7-0802-498C-9200-B55C195A14C6}
+		{2A695FF4-607F-4A56-BCB4-160CBBBF233B} = {C31801D7-0802-498C-9200-B55C195A14C6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E21B150C-1BE7-4F32-9D12-DA0AC9FCFF23}
+	EndGlobalSection
+EndGlobal

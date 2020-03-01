@@ -1,0 +1,5 @@
+20200226: 
+iAspNetcore.Middleware.Logging.RollingFile  update  to¡¡.Net Core 2.1.2 302
+
+20180826: 
+iAspNetcore.Middleware.Logging.RollingFile  update  to¡¡.Net Core 2.1.2 302

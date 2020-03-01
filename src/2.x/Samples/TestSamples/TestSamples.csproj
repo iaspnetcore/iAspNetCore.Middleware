@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\iAspNetCore.Middleware.Logging.ColoredConsole\iAspNetCore.Middleware.Logging.ColoredConsole.csproj" />
+    <ProjectReference Include="..\..\Middleware\iAspNetCore.Middleware.Logging.ColorConsole\iAspNetCore.Middleware.Logging.ColorConsole.csproj" />
+  </ItemGroup>
+
+</Project>
