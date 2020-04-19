@@ -14,6 +14,8 @@ using Microsoft.Extensions.Logging;
 using iAspNetcore.Middleware.LogRequest;
 using iAspNetcore.Middleware.LogResponse;
 
+using iAspNetcore.Middleware.Sitemap;
+
 namespace TestSamples
 {
     public class Startup
@@ -53,6 +55,7 @@ namespace TestSamples
 
             app.UseiAspNetcoreLogRequest();
             app.UseiAspNetcoreLogResponse();
+            app.UseSitemapMiddleware();
 
             app.UseEndpoints(endpoints =>
             {

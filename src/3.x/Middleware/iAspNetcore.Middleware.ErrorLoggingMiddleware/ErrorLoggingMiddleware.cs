@@ -61,18 +61,18 @@ namespace iAspNetcore.Middleware.ErrorLoggingMiddleware
             }
             catch (Exception ex)
             {
-                Log log = new Log();
+                //Log log = new Log();
 
-                log.LogLevel = NopLogLevel.Error;
-                log.ReferrerUrl = context.Request.Headers["referer"].ToString() + " " + context.Connection.RemoteIpAddress.ToString();
-                log.ShortMessage = string.Format("Error :provider by ErrorLoggingMiddleware.Status:{0} PageUrl:{1} UserAgent:{2} IpAddress:{3}", context.Response.StatusCode.ToString(), PageUrl, UserAgent, ip);
-                log.FullMessage = context.Request.Headers["User-Agent"] + "err message:" + ex.Message + "ex.StackTrace:" + ex.StackTrace;
-                log.PageUrl = context.Request.Host.ToString() + context.Request.Path.ToString() + context.Request.QueryString.ToString();
-                log.IpAddress = ip;
-                log.CreatedOnUtc = DateTime.UtcNow;
+                //log.LogLevel = NopLogLevel.Error;
+                //log.ReferrerUrl = context.Request.Headers["referer"].ToString() + " " + context.Connection.RemoteIpAddress.ToString();
+                //log.ShortMessage = string.Format("Error :provider by ErrorLoggingMiddleware.Status:{0} PageUrl:{1} UserAgent:{2} IpAddress:{3}", context.Response.StatusCode.ToString(), PageUrl, UserAgent, ip);
+                //log.FullMessage = context.Request.Headers["User-Agent"] + "err message:" + ex.Message + "ex.StackTrace:" + ex.StackTrace;
+                //log.PageUrl = context.Request.Host.ToString() + context.Request.Path.ToString() + context.Request.QueryString.ToString();
+                //log.IpAddress = ip;
+                //log.CreatedOnUtc = DateTime.UtcNow;
 
 
-                _logger.InsertLog(log);
+                //_logger.InsertLog(log);
 
 
 
@@ -84,7 +84,7 @@ namespace iAspNetcore.Middleware.ErrorLoggingMiddleware
                     //await context.Response.WriteAsync("<br>Error: " + HtmlEncoder.Default.Encode(ex.StackTrace) + "<br>\r\n");
                 }
 
-                System.Diagnostics.Debug.WriteLine(log.ShortMessage + log.FullMessage + log.PageUrl + $"The following error happened: {ex.Message}");
+             //   System.Diagnostics.Debug.WriteLine(log.ShortMessage + log.FullMessage + log.PageUrl + $"The following error happened: {ex.Message}");
 
                 throw; // Don't stop the error
             }

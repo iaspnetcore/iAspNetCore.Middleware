@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions.Internal;
+using Microsoft.Extensions.Logging.Console;
+using Microsoft.Extensions.Logging.Console.Internal;
 
 //https://dzone.com/articles/customizing-aspnet-core-part-1-logging
 namespace iAspNetCore.Middleware.Logging.ColoredConsole

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Middleware\iAspNetcore.Middleware.DynamicallySitemapXml\iAspNetcore.Middleware.Sitemap.csproj" />
     <ProjectReference Include="..\..\Middleware\iAspNetcore.Middleware.LogRequest\iAspNetcore.Middleware.LogRequest.csproj" />
     <ProjectReference Include="..\..\Middleware\iAspNetcore.Middleware.LogResponse\iAspNetcore.Middleware.LogResponse.csproj" />
   </ItemGroup>
