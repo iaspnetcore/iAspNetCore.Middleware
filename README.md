@@ -1,6 +1,6 @@
 ﻿# iAspNetCore.Middleware
 Some Asp .Net Core Middleware
-
+For more information take a look at  blog post.
 1.iAspNetcore.Middleware.LogRequest
 app.UseiAspNetcoreLogRequest();
 
