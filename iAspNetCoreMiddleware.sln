@@ -32,9 +32,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetCore.Middleware.Logg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetcore.Middleware.ErrorLoggingMiddleware", "src\3.x\Middleware\iAspNetcore.Middleware.ErrorLoggingMiddleware\iAspNetcore.Middleware.ErrorLoggingMiddleware.csproj", "{2A695FF4-607F-4A56-BCB4-160CBBBF233B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iAspNetcore.Middleware.Sitemap", "src\3.x\Middleware\iAspNetcore.Middleware.DynamicallySitemapXml\iAspNetcore.Middleware.Sitemap.csproj", "{41CA4167-E173-4AFC-B120-4C6578814AD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetcore.Middleware.Sitemap", "src\3.x\Middleware\iAspNetcore.Middleware.DynamicallySitemapXml\iAspNetcore.Middleware.Sitemap.csproj", "{41CA4167-E173-4AFC-B120-4C6578814AD8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iAspNetcore.Middleware.LogRequest", "src\3.x\Middleware\iAspNetcore.Middleware.LogRequest\iAspNetcore.Middleware.LogRequest.csproj", "{2D5339FA-DEAB-45DA-890E-3570D5B251DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iAspNetcore.Middleware.LogRequest", "src\3.x\Middleware\iAspNetcore.Middleware.LogRequest\iAspNetcore.Middleware.LogRequest.csproj", "{98D6CAB7-869E-4D66-A243-83F88482E8C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,10 +78,10 @@ Global
 		{41CA4167-E173-4AFC-B120-4C6578814AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41CA4167-E173-4AFC-B120-4C6578814AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41CA4167-E173-4AFC-B120-4C6578814AD8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D5339FA-DEAB-45DA-890E-3570D5B251DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D5339FA-DEAB-45DA-890E-3570D5B251DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D5339FA-DEAB-45DA-890E-3570D5B251DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D5339FA-DEAB-45DA-890E-3570D5B251DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D6CAB7-869E-4D66-A243-83F88482E8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D6CAB7-869E-4D66-A243-83F88482E8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D6CAB7-869E-4D66-A243-83F88482E8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D6CAB7-869E-4D66-A243-83F88482E8C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,7 +99,7 @@ Global
 		{21C139B7-744F-46EE-A10D-BC5BAD1F6C28} = {C31801D7-0802-498C-9200-B55C195A14C6}
 		{2A695FF4-607F-4A56-BCB4-160CBBBF233B} = {C31801D7-0802-498C-9200-B55C195A14C6}
 		{41CA4167-E173-4AFC-B120-4C6578814AD8} = {C31801D7-0802-498C-9200-B55C195A14C6}
-		{2D5339FA-DEAB-45DA-890E-3570D5B251DE} = {C31801D7-0802-498C-9200-B55C195A14C6}
+		{98D6CAB7-869E-4D66-A243-83F88482E8C7} = {C31801D7-0802-498C-9200-B55C195A14C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E21B150C-1BE7-4F32-9D12-DA0AC9FCFF23}
