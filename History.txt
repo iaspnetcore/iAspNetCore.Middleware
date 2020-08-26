@@ -1,3 +1,8 @@
+20200826
+iAspNetcore.Middleware.LogRequest  update  to¡¡.Net Core 3.1.1
+iAspNetcore.Middleware.LogResponse  update  to¡¡.Net Core 3.1.1
+
+
 20200226: 
 iAspNetcore.Middleware.Logging.RollingFile  update  to¡¡.Net Core 3.1
 
