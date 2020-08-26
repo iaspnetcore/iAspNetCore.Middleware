@@ -11,4 +11,12 @@
     <PackageTags>LogRequest</PackageTags>
   </PropertyGroup>
 
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.1" />
+  </ItemGroup>
 </Project>

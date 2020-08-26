@@ -29,7 +29,7 @@ namespace iAspNetcore.Middleware.LogResponse
         {
 
             var url = UriHelper.GetDisplayUrl(context.Request);
-            _logger.LogInformation($"\n{DateTime.Now.ToString()}-Request url: {url},\nRequest Method: {context.Request.Method},Request Schem: {context.Request.Scheme}, UserAgent: {context.Request.Headers[HeaderNames.UserAgent].ToString()}");
+            _logger.LogInformation($"\n{DateTime.Now.ToString()} Request url: {url},\nRequest Method: {context.Request.Method},Request Schem: {context.Request.Scheme}, UserAgent: {context.Request.Headers[HeaderNames.UserAgent].ToString()}");
 
 
             //Header
@@ -44,7 +44,7 @@ namespace iAspNetcore.Middleware.LogResponse
 
 
 
-            this._logger.LogInformation($"\n{DateTime.Now.ToString()}Response.Headers:{0}\n" , allkeypair.ToString());
+            this._logger.LogInformation($"\n{DateTime.Now.ToString()} Response.Headers:{0}\n" , allkeypair.ToString());
 
 
             var bodyStream = context.Response.Body;
@@ -57,7 +57,8 @@ namespace iAspNetcore.Middleware.LogResponse
             responseBodyStream.Seek(0, SeekOrigin.Begin);
             var responseBody = new StreamReader(responseBodyStream).ReadToEnd();
              _logger.Log(LogLevel.Information, 1, $"RESPONSE LOG: {responseBody}", null, _defaultFormatter);
-            this._logger.LogInformation($"\n{DateTime.Now.ToString()}response Body:{responseBody}\n");
+
+            this._logger.LogInformation($"\n{DateTime.Now.ToString()} response Body:{responseBody}\n");
 
             responseBodyStream.Seek(0, SeekOrigin.Begin);
             await responseBodyStream.CopyToAsync(bodyStream);
