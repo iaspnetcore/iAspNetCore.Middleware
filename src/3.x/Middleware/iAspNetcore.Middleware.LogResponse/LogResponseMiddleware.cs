@@ -28,6 +28,8 @@ namespace iAspNetcore.Middleware.LogResponse
         public async Task Invoke(HttpContext context)
         {
 
+            _logger.LogInformation($"\n=={DateTime.Now.ToString()} =====LogResponseMiddleware start=========================");
+
             var url = UriHelper.GetDisplayUrl(context.Request);
             _logger.LogInformation($"\n{DateTime.Now.ToString()} Request url: {url},\nRequest Method: {context.Request.Method},Request Schem: {context.Request.Scheme}, UserAgent: {context.Request.Headers[HeaderNames.UserAgent].ToString()}");
 
@@ -46,6 +48,8 @@ namespace iAspNetcore.Middleware.LogResponse
 
             this._logger.LogInformation($"\n{DateTime.Now.ToString()} Response.Headers:{0}\n" , allkeypair.ToString());
 
+            _logger.LogInformation($"\n|--{DateTime.Now.ToString()} -----LogResponseMiddleware Response.Headers end-----|");
+
 
             var bodyStream = context.Response.Body;
 
@@ -59,6 +63,8 @@ namespace iAspNetcore.Middleware.LogResponse
              _logger.Log(LogLevel.Information, 1, $"RESPONSE LOG: {responseBody}", null, _defaultFormatter);
 
             this._logger.LogInformation($"\n{DateTime.Now.ToString()} response Body:{responseBody}\n");
+
+            _logger.LogInformation($"\n=={DateTime.Now.ToString()} =====LogResponseMiddleware end=========================");
 
             responseBodyStream.Seek(0, SeekOrigin.Begin);
             await responseBodyStream.CopyToAsync(bodyStream);

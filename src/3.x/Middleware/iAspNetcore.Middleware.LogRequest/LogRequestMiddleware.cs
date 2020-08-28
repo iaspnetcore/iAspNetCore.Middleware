@@ -36,6 +36,8 @@ namespace iAspNetcore.Middleware.LogRequest
 
             // _logger.LogInformation($"\n{DateTime.Now.ToString()}-Request url: {url},\nRequest Method: {context.Request.Method},Request Schem: {context.Request.Scheme}, UserAgent: {context.Request.Headers[HeaderNames.UserAgent].ToString()}");
 
+            _logger.LogInformation($"\n=={DateTime.Now.ToString()} =====LogRequestMiddleware start=========================");
+
             string requestUrlString = $"Request url: {url},Request Method: {context.Request.Method},Request Schem: {context.Request.Scheme}, UserAgent: {context.Request.Headers[HeaderNames.UserAgent].ToString()}";
 
             string allkeypair = "";
@@ -51,7 +53,7 @@ namespace iAspNetcore.Middleware.LogRequest
 
             // this._logger.LogInformation($"\n{DateTime.Now.ToString()}Request.Headers:{0}\n" + allkeypair.ToString());
 
-
+            _logger.LogInformation($"\n|--{DateTime.Now.ToString()} -----LogRequestMiddleware Request.Headers end-----|");
 
 
             var requestBodyStream = new MemoryStream();
@@ -70,6 +72,8 @@ namespace iAspNetcore.Middleware.LogRequest
             context.Request.Body = requestBodyStream;
 
             _logger.LogInformation($"{DateTime.Now.ToString()}-{requestUrlString}\n{requestHeadersString}\n{requestBodyString}");
+
+            _logger.LogInformation($"\n=={DateTime.Now.ToString()} =====LogRequestMiddleware end=========================");
 
             await next(context);
             context.Request.Body = originalRequestBody;

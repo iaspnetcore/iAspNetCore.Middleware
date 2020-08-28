@@ -1,7 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>3.1.1.0</Version>
+    <Authors>www.iAspNetcore.com</Authors>
+    <Description>release</Description>
+    <PackageProjectUrl>https://github.com/iaspnetcore/iAspNetCore.Middleware</PackageProjectUrl>
+    <PackageReleaseNotes>ErrorLoggingMiddleware</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
