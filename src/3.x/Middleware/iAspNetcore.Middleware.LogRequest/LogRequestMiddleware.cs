@@ -5,6 +5,7 @@
  */
 
 using System.IO;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft. AspNetCore.Http;
@@ -34,11 +35,14 @@ namespace iAspNetcore.Middleware.LogRequest
         {
             var url = UriHelper.GetDisplayUrl(context.Request);
 
-            // _logger.LogInformation($"\n{DateTime.Now.ToString()}-Request url: {url},\nRequest Method: {context.Request.Method},Request Schem: {context.Request.Scheme}, UserAgent: {context.Request.Headers[HeaderNames.UserAgent].ToString()}");
+            StringBuilder consoleOutputStringBuilder = new StringBuilder();
 
-            _logger.LogInformation($"\n=={DateTime.Now.ToString()} =====LogRequestMiddleware start=========================");
+            consoleOutputStringBuilder.Append($"\n┌=={DateTime.Now.ToString()} =====LogRequestMiddleware start=========================┐");
+      
+             consoleOutputStringBuilder.Append($"\n{DateTime.Now.ToString()}-Request url: {url},\nRequest Method: {context.Request.Method},Request Schem: {context.Request.Scheme}, UserAgent: {context.Request.Headers[HeaderNames.UserAgent].ToString()}");
 
-            string requestUrlString = $"Request url: {url},Request Method: {context.Request.Method},Request Schem: {context.Request.Scheme}, UserAgent: {context.Request.Headers[HeaderNames.UserAgent].ToString()}";
+            consoleOutputStringBuilder.Append($"\n|--{DateTime.Now.ToString()}1. ├──-----LogRequestMiddleware Request.Headers start-----|");
+
 
             string allkeypair = "";
             IHeaderDictionary headers = context.Request.Headers;
@@ -51,9 +55,13 @@ namespace iAspNetcore.Middleware.LogRequest
 
             string requestHeadersString = $"Request.Headers:\n {allkeypair.ToString()}";
 
-            // this._logger.LogInformation($"\n{DateTime.Now.ToString()}Request.Headers:{0}\n" + allkeypair.ToString());
+           
+            consoleOutputStringBuilder.Append($"\n{DateTime.Now.ToString()}Request.Headers:{0}\n" + allkeypair.ToString());
 
-            _logger.LogInformation($"\n|--{DateTime.Now.ToString()} -----LogRequestMiddleware Request.Headers end-----|");
+        
+            consoleOutputStringBuilder.Append($"\n|--{DateTime.Now.ToString()} 2.-----LogRequestMiddleware Request.Headers end-----|");
+
+            consoleOutputStringBuilder.Append($"\n|--{DateTime.Now.ToString()} 3.-----LogRequestMiddleware Request.Body start-----|");
 
 
             var requestBodyStream = new MemoryStream();
@@ -64,16 +72,22 @@ namespace iAspNetcore.Middleware.LogRequest
 
 
             var requestBodyText = new StreamReader(requestBodyStream).ReadToEnd();
-            //    _logger.LogInformation($"\n{DateTime.Now.ToString()}-Request Body: {requestBodyText}");
+          
 
             var requestBodyString = $"Request Body: {requestBodyText}";
 
             requestBodyStream.Seek(0, SeekOrigin.Begin);
             context.Request.Body = requestBodyStream;
 
-            _logger.LogInformation($"{DateTime.Now.ToString()}-{requestUrlString}\n{requestHeadersString}\n{requestBodyString}");
+        
+            consoleOutputStringBuilder.Append($"\n{DateTime.Now.ToString()}-Request Body: {requestBodyText}");
 
-            _logger.LogInformation($"\n=={DateTime.Now.ToString()} =====LogRequestMiddleware end=========================");
+            consoleOutputStringBuilder.Append($"\n|--{DateTime.Now.ToString()} 4.├──-----LogRequestMiddleware Request.Body end-----|");
+
+           
+            consoleOutputStringBuilder.Append($"\n└=={DateTime.Now.ToString()}   ──=====LogRequestMiddleware end=========================┘");
+
+            _logger.LogInformation(consoleOutputStringBuilder.ToString());
 
             await next(context);
             context.Request.Body = originalRequestBody;
