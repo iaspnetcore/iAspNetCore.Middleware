@@ -1,12 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 using Microsoft.Extensions.Logging;
 
@@ -14,7 +14,6 @@ using Microsoft.Extensions.Logging;
 using iAspNetcore.Middleware.LogRequest;
 using iAspNetcore.Middleware.LogResponse;
 
-using iAspNetcore.Middleware.Sitemap;
 
 namespace TestSamples
 {
@@ -34,7 +33,7 @@ namespace TestSamples
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -44,9 +43,6 @@ namespace TestSamples
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
-            
-
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -55,7 +51,6 @@ namespace TestSamples
 
             app.UseiAspNetcoreLogRequest();
             app.UseiAspNetcoreLogResponse();
-            app.UseSitemapMiddleware();
 
             app.UseEndpoints(endpoints =>
             {
