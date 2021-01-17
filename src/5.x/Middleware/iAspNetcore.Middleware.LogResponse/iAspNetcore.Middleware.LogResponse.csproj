@@ -8,8 +8,8 @@
 		<PackageProjectUrl>https://github.com/iaspnetcore/iAspNetCore.Middleware</PackageProjectUrl>
 		<PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</PackageLicenseUrl>
 		<PackageReleaseNotes>release</PackageReleaseNotes>
-		<Description>iAspNetcore.Middleware.LogResponse update to .net core 5.0.102.0</Description>
-		<Copyright>Copyright 2020</Copyright>
+		<Description>iAspNetcore.Middleware.LogResponse update to .net sdks 5.0.102</Description>
+		<Copyright>Copyright 2021</Copyright>
 		<NeutralLanguage>en</NeutralLanguage>
 		<Company>www.iAspNetcore.com</Company>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>

@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{729F4556-2A5A-47A0-AAF5-2C40340B846B}"
 	ProjectSection(SolutionItems) = preProject
 		History.txt = History.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSamples", "src\5.x\Samples\TestSamples\TestSamples.csproj", "{CC7D27D7-C6F9-4B9D-A262-BC1AAE625AF1}"

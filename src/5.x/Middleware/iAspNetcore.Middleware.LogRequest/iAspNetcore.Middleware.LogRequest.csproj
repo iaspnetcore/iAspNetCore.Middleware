@@ -4,8 +4,8 @@
 		<TargetFramework>net5.0</TargetFramework>
 		<Version>5.0.102.0</Version>
 		<Authors>www.iAspNetcore.com</Authors>
-		<Description>iAspNetcore.Middleware.LogRequest update to .net core 5.0.102.0</Description>
-		<Copyright>Copyright 2020</Copyright>
+		<Description>iAspNetcore.Middleware.LogRequest update to .net sdks 5.0.102</Description>
+		<Copyright>Copyright 2021</Copyright>
 		<PackageProjectUrl>https://github.com/iaspnetcore/iAspNetCore.Middleware</PackageProjectUrl>
 		<PackageReleaseNotes>release</PackageReleaseNotes>
 		<PackageTags>LogRequest</PackageTags>
